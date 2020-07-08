@@ -1,0 +1,167 @@
+<?php include("includes/header.php"); ?>
+
+<!--===============================
+=            Hero Area            =
+================================-->
+
+<section class="hero-area bg-1 text-center overly">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Header Contetnt -->
+				<div class="content-block">
+					<h1>Rent your sports infrastructure here</h1>
+					<p><b>List your infrastructure</b> with us and get your property searched <br>  by the billions of users on Internet.</p>
+					
+					<div class="content-holder"><br>
+						<a class="nav-link text-white add-button" href="?page=signup"><i class="fa fa-plus-circle"></i> Click here to Join</a>
+					</div>	
+				</div>
+				<!-- Advance Search -->
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<section class="about-us py-5 " id="about-us">
+    <div class="container mt-5">
+	<div class="row">
+		<div class="col-md-6">
+		    <h1 class='text-success'>Welcome!</h1>
+		    <h2>Know More About Us</h2>
+		    <hr>
+		    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etae magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		    <button type="button" class="btn btn-success">Let's Know More</button>
+
+		</div>
+		<div class="col-md-6">
+		    <img src="images/home/fbst.png" alt="" width="100%">
+		</div>
+	</div>
+</div>
+</section>
+
+<!----------------------------------------------------------------------------- ---->
+<!----------------------------------------------------------------------------- ---->
+<!----------------------------------------------------------------------------- ---->
+<div class="container bootstrap snippet">
+
+<section id="services" class="current">
+    <div class="services-top">
+        <div class="container bootstrap snippet">
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-12 col-md-12">
+                    <h2>What We Offer</h2>
+                    <h2 style="font-size: 60px;line-height: 60px;margin-bottom: 20px;font-weight: 900;">Why Champions?</h2>
+                    <p>Our <span class="highlight">experienced</span> and <span class="highlight">dedicated</span> staff provide these services with a smile.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-1 col-sm-12 col-md-12 col-md-10">
+                    <div class="services-list">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-md-4">
+                                <div class="service-block" style="visibility: visible;">
+                                    <div class="ico fa fa-money highlight"></div>
+                                    <div class="text-block">
+                                        <div class="name">Earn Money</div>
+                                        <div class="info">Listing for money</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-md-4">
+                                <div class="service-block" style="visibility: visible;">
+                                    <div class="ico fa fa-code highlight"></div>
+                                    <div class="text-block">
+                                        <div class="name">Technical Support</div>
+                                        <div class="info">Quality code that lasts</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-md-4">
+                                <div class="service-block" style="visibility: visible;">
+                                    <div class="ico fa fa-pencil highlight"></div>
+                                    <div class="text-block">
+                                        <div class="name">Easy Listing</div>
+                                        <div class="info">Words that tell your story</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-md-4">
+                                <div class="service-block" style="visibility: visible;">
+                                    <div class="ico fa fa-bullhorn highlight"></div>
+                                    <div class="text-block">
+                                        <div class="name">Social Media Shout-out</div>
+                                        <div class="info">Converting users to customers</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-md-4">
+                                <div class="service-block" style="visibility: visible;">
+                                    <div class="ico fa fa-eye highlight"></div>
+                                    <div class="text-block">
+                                        <div class="name">Branding/Identity</div>
+                                        <div class="info">Leave a lasting impression</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-md-4">
+                                <div class="service-block" style="visibility: visible;">
+                                    <div class="ico fa fa-umbrella highlight"></div>
+                                    <div class="text-block">
+                                        <div class="name">Strategy/Planning</div>
+                                        <div class="info">Thinking beyond tomorrow</div>
+                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<!----------------------------------------------------------------------------- ---->
+<!----------------------------------------------------------------------------- ---->
+<!----------------------------------------------------------------------------- ---->
+
+
+
+
+
+<!--====================================
+=            Call to Action            =
+=====================================-->
+
+<section class="call-to-action overly bg-3 section-sm">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row justify-content-md-center text-center">
+			<div class="col-md-8">
+				<div class="content-holder">
+					<h2>Start today to get more exposure and
+					grow your business</h2>
+					<ul class="list-inline mt-30">
+						<li class="list-inline-item"><a class="btn btn-main" href="ad-listing.html">Add Listing</a></li>
+						<li class="list-inline-item"><a class="btn btn-secondary" href="category.html">Browser Listing</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<?php require("includes/footer.php"); ?>
