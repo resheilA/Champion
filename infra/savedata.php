@@ -60,20 +60,13 @@ $imagearraykey = array_keys($_FILES);
 	}	
 }
 
-// $_POST['user|name'] = "user input",$_POST['user|bname'] = "user input",$_POST['user|ename'] = "user input"
-
 $arraykey = array_keys($_POST);
- 
-//$arraykey = user|name
 
 
 //////////////////FIRST CREATEING A 2d array of FORMAT 
+////////////////// array[tablename][variablename]
 ///////////////////
-////////////////// array[tablename][0] = variablename1
-/////////////////  array[tablename_1][1] = variablename2
-/////////////////  array[tablename][1] = variablename3
-/////////////////  array[tablename_1][0] = variablename4
-/////////////////  array[tablename][2] = variablename5
+
 
 $table_count = 0;
 $variable_count = 0;
@@ -98,23 +91,18 @@ $keypiece = explode("|", $key);
 	}
 }
 //echo"<pre>";
-// 		
 
-//array_select[users][0] = name;array_select[users][1] = uname;array_select[users][2] = password
-				
+
 	foreach(array_keys($array_select) as $tablename)
 	{
 		//////RUNNING A LOOP FOR TABLE NAME
-		
-		//$tablename = users
-		
+
 		$variable_string = "";
 		$value_string = "";
 		$firstcount = 0;
 		$firstcount_value = 0;
 		
 		///// CREATING A VARIABLE STRING
-		//$sql = "INSERT INTO MyGuests (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com', 'football, cricket, basketball')";
 		
 		foreach($array_select[$tablename] as $variname)
 		{
@@ -139,20 +127,14 @@ $keypiece = explode("|", $key);
 		foreach($array_select[$tablename] as $variname)
 		{	
 			
-			//$_POST[user|name] = frferf
-			//$_POST[user|sports][0] = 1234
-			//$_POST[user|sports][1] = 5678 
-			//$_POST[user|sports] = 1234, 5678
-			// 'frferf', '1234', '5678', 'cri,fooball,tennis'
-			
 			/////RUNNING A LOOP FOR VARIABLE NAME AND GETTING AND PREPARING VALUE STRING
 			$joined_string = $tablename."|".$variname;
-					
-			//this is only for the checkboxes			
+						
 			if(is_array($_POST[$joined_string]) == true)
 			{					
 				$_POST[$joined_string] = implode(", ", $_POST[$joined_string]);			
-			}			
+			}
+			
 			
 			$flag_auth = authenticate($joined_string, $_POST);
 			
@@ -184,7 +166,7 @@ $keypiece = explode("|", $key);
 					//header('Location: '.$result['redirect_to']);
 					//echo "New record created successfully";
 				} else {
-					//echo "Error: " . $sql . "<br>" . $conn->error;die();
+					echo "Error: " . $sql . "<br>" . $conn->error;die();
 					$error_mysql = '
 								<div class="alert alert-danger">
 							<strong>Error!</strong> Cannot Save. Please check the details you have entered.

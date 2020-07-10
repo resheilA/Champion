@@ -3,9 +3,8 @@
 
 require( "config.php" );
 session_start();
-$page = isset( $_GET['page'] ) ? $_GET['page'] : "?page=home";
+$page = isset( $_GET['page'] ) ? $_GET['page'] : "home";
 $username = isset( $_SESSION['username'] ) ? $_SESSION['username'] : "";
-
 
 if(isset($_SESSION["type"]) && $_SESSION["type"] != "Infra"){	
 	header("location: /sport/trainer/?page=home");exit();
