@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-8 align-item-center">
                 <div class="border" style="background-color: white;">
-                    <h3 class="bg-gray p-4"><i class="fa fa-trophy" aria-hidden="true"></i> &nbspLogin As Sports Professional </h3>
+                    <h3 class="bg-gray p-4"><i class="fa fa-trophy" aria-hidden="true"></i> &nbspLogin As Sports Vendor</h3>
 					<?php if(isset($response["error"])){	
 							echo '<div class="alert alert-danger">
 							<strong>Error!</strong> Username or Password Not Found !

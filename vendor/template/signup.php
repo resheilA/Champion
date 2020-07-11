@@ -1,13 +1,13 @@
 <?php include_once("includes/header.php"); ?>
 
-<section class="login py-5 border-top-1">
+<section class="login py-5 border-top-1" style="background-image:url('images/home/login.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-8 align-item-center">
-                    <div class="border border">
+                    <div class="border border" style="background-color: white;">
                         <h3 class="bg-gray p-4">Register Now</h3>							
                         <form action="" method="post">			
-							<input type="hidden" name="users|type" value="Trainer">
+							<input type="hidden" name="users|type" value="Vendor">
 							<input type="hidden" name="users|randomid" value="<?php echo $random_id; ?>">
                             <fieldset class="p-4">
 							<?php if(isset($error_mysql)){echo $error_mysql;}  ?>

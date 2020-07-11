@@ -12,8 +12,7 @@
 				<!-- Header Contetnt -->
 				<div class="content-block">
 					<h1>Sell your sports gear to crores of customers across India</h1>
-					<p><b>List your products</b> with us and be found by the billions of users on Internet. <br>Your shop is open 24x7 with hasel free technical support. </p>
-					
+					<p><b>List your products</b> with us and be found by the millions people looking for sports products. <br>Your shop with us is open 24x7 with hassle free technical support. </p>					
 					<div class="content-holder"><br>
 						<a class="nav-link text-white add-button" href="?page=signup"><i class="fa fa-plus-circle"></i> Click here to Join</a>
 					</div>	
@@ -32,9 +31,10 @@
 		    <h1 class='text-success'>Welcome!</h1>
 		    <h2>Know More About Us</h2>
 		    <hr>
-		    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etae magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    <button type="button" class="btn btn-success">Let's Know More</button>
+		    <p>Champion.in is a platform to fulfill every necessity required to perform a sport, under one roof.
+				</p><p>		
+				All those who have the talent but lack some of the necessities such as, the perfect infrastructure, the correct guidance, the equipment required, or even the motivation to leap, we are here to provide you with all that is required to be a successful athlete. It is a platform to make your path to success as easy as possible from our end.</p>
+		    <a href="?page=aboutus"><button type="button" class="btn btn-success">Let's Know More</button></a>
 
 		</div>
 		<div class="col-md-6">
@@ -43,6 +43,27 @@
 	</div>
 </div>
 </section>
+
+<!--====================================
+=            Call to Action            =
+=====================================-->
+
+<section class="call-to-action overly bg-3 section-sm">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row justify-content-md">
+			<div class="col-md-10">
+				<div class="content-holder"> 
+					<h1 class="text-white">Want to speed up the process of signing up with us ?</h1>		
+					<h1 class="text-white">Contact us on +91 7021 980 307 to know more.</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+
 
 <!----------------------------------------------------------------------------- ---->
 <!----------------------------------------------------------------------------- ---->
@@ -141,27 +162,5 @@
 
 
 
-<!--====================================
-=            Call to Action            =
-=====================================-->
-
-<section class="call-to-action overly bg-3 section-sm">
-	<!-- Container Start -->
-	<div class="container">
-		<div class="row justify-content-md-center text-center">
-			<div class="col-md-8">
-				<div class="content-holder">
-					<h2>Start today to get more exposure and
-					grow your business</h2>
-					<ul class="list-inline mt-30">
-						<li class="list-inline-item"><a class="btn btn-main" href="ad-listing.html">Add Listing</a></li>
-						<li class="list-inline-item"><a class="btn btn-secondary" href="category.html">Browser Listing</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Container End -->
-</section>
 
 <?php require("includes/footer.php"); ?>

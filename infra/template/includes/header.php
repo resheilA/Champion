@@ -61,7 +61,7 @@
 								<a class="nav-link" href="?page=aboutus">About Us</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="?page=concept">How it works?</a>
+								<a class="nav-link" href="?page=howitworks">How it works?</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="?page=faq">FAQ's</a>

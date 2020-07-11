@@ -10,11 +10,9 @@
         <!-- About -->
         <div class="block about">
           <!-- footer logo -->
-          <img src="images/logo.png" alt="">
+          <!--<img src="images/logo.png" alt="">-->
           <!-- description -->
-          <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="alt-color">To build a platform for the Athletes - Empowering Indian talents by developing skills, utilizing experiences and other sports resources under one roof.</p>
         </div>
       </div>
       <!-- Link list -->
@@ -31,29 +29,37 @@
         </div>
       </div>
       <!-- Link list -->
-      <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+	  <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
         <div class="block">
-          <h4>Admin Pages</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="category.html">Category</a></li>
-            <li><a href="single.html">Single Page</a></li>
-            <li><a href="store.html">Store Single</a></li>
-            <li><a href="single-blog.html">Single Post</a>
-            </li>
-            <li><a href="blog.html">Blog</a></li>
-
-
-
-          </ul>
+		   <li><a href="../index.php?page=home">Home</a></li>
+	  <?php
+      
+	 if(!isset($_SESSION['uid']) || !$_SESSION['uid'])
+	 {
+	   echo'
+	  
+            <li><a href="../infra/index.php?page=home">Infrastructure</a></li>
+            <li><a href="../trainer/index.php?page=home">Trainers</a></li>
+            <li><a href="../vendor/index.php?page=home">Vendors</a></li>';
+			}
+			
+		?>	
+            <li><a href="../events/index.php?page=home">Events</a></li>
+           </ul>
         </div>
       </div>
-      <!-- Promotion -->
+	 
+	 
+	  
+      <!-- Promotion 
       <div class="col-lg-4 col-md-7">
-        <!-- App promotion -->
+        App promotion
         <div class="block-2 app-promotion">
           <div class="mobile d-flex">
             <a href="">
-              <!-- Icon -->
+               Icon 
               <img src="images/footer/phone-icon.png" alt="mobile-icon">
             </a>
             <p>Get the Dealsy Mobile App and Save more</p>
@@ -63,7 +69,7 @@
             <a href="#" class=" ml-3"><img src="images/apps/apple-app-store.png" class="img-fluid" alt=""></a>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
   <!-- Container End -->

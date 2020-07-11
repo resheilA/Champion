@@ -45,11 +45,18 @@ switch ( $page ) {
 	case 'faq':
 	   faq();
 	  break; 
+	case 'howitworks':
+	   howitworks();
+	  break;   
 	case 'logout':	
 	  logout();
 	  break;  
 	default:
 	  mainpage();		
+}
+
+function howitworks(){
+	include(TEMPLATE_PATH."howitworks.php");			
 }
 
 function aboutus(){

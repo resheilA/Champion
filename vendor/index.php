@@ -6,11 +6,11 @@ session_start();
 $page = isset( $_GET['page'] ) ? $_GET['page'] : "home";
 $username = isset( $_SESSION['username'] ) ? $_SESSION['username'] : "";
 
-if(isset($_SESSION["type"]) && $_SESSION["type"] != "Trainer"){	
-	header("location: /sport/infra/?page=home");exit();
+if(isset($_SESSION["type"]) && $_SESSION["type"] != "vendor"){	
+	//header("location: /sport/infra/?page=home");exit();
 }
 
-if ( $page != "login" && $page != "logout" && !$username && $page != "signup" && $page != "home" && $page != "contactus" && $page != "aboutus" && $page != "faq" ) {
+if ( $page != "login" && $page != "logout" && !$username && $page != "signup" && $page != "home" && $page != "contactus" && $page != "aboutus" && $page != "faq" && $page != "howitworks" ) {
   login();
   exit;
 }
@@ -48,12 +48,16 @@ switch ( $page ) {
 	case 'logout':	
 	  logout();
 	  break;  
+	case 'howitworks':
+	   howitworks();
+	  break;   
 	default:
 	  mainpage();		
 }
 
-
-
+function howitworks(){
+	include(TEMPLATE_PATH."howitworks.php");			
+}
 
 function aboutus(){
 	include(TEMPLATE_PATH."aboutus.php");			
@@ -82,7 +86,7 @@ function login()
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
 		include("getdata_single.php");
-		$response = singletable( "users", $where = "WHERE type = 'Trainer' AND username='".$_POST['users|username']."' AND password ='".$_POST['users|password']."'", $param = "*" );	
+		$response = singletable( "users", $where = "WHERE type = 'Vendor' AND username='".$_POST['users|username']."' AND password ='".$_POST['users|password']."'", $param = "*" );	
 		
 		if(!isset($response["error"])){
 			session_start();		
@@ -109,16 +113,11 @@ function signup()
 
 function dashboard()
 {	
-	$checkflag = 0; 
-	 
+	$checkflag = 0; 	 
 	include("getdata_single.php");
-	$response = singletable( "trainer_details", $where = "WHERE randomid='".$_SESSION['uid']."'", $param = "*" );	
+	$response = singletable( "vendor_details", $where = "WHERE randomid='".$_SESSION['uid']."'", $param = "*" );	
 		
-	if(isset($response["error"])){$checkflag = 1;}	
-	else{		
-		$chargesresponse = singletable( "trainer_charges", $where = "WHERE uid='".$_SESSION['uid']."'", $param = "*" );			
-		if(isset($chargesresponse["error"])){$checkflag = 2;}
-	}
+	if(isset($response["error"])){$checkflag = 1;}
 	
 
 	if($checkflag == 1){
@@ -129,14 +128,7 @@ function dashboard()
 				include("savedata.php");
 			}	
 			
-		include(TEMPLATE_PATH."details.php");
-	}	
-	elseif($checkflag == 2){		
-		if($_SERVER["REQUEST_METHOD"] == "POST")
-		{
-			include("savedata.php");
-		}	
-		include(TEMPLATE_PATH."timedetails.php");
+		include(TEMPLATE_PATH."vendorregistration.php");
 	}	
 	else{
 		include(TEMPLATE_PATH."thankyou.php");
